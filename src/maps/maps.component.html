@@ -1,0 +1,46 @@
+<aol-map [width]="'100%'" [height]="'100%'">
+    <aol-view [zoom]="3">
+        <aol-coordinate [x]="40.33534136546185" [y]="34.68681318681319" [srid]="'EPSG:4326'"></aol-coordinate>
+    </aol-view>
+    <aol-layer-tile >
+        <aol-source-osm></aol-source-osm>
+    </aol-layer-tile>
+    <aol-layer-vector >
+        <aol-source-vector>
+            <aol-feature>
+                <aol-geometry-point>
+                    <aol-coordinate [x]="40.33534136546185" [y]="34.68681318681319" [srid]="'EPSG:4326'"></aol-coordinate>
+                </aol-geometry-point>
+                <aol-style>
+                    <aol-style-circle [radius]="10">
+                        <aol-style-stroke [color]="'black'" [width]="width"></aol-style-stroke>
+                        <aol-style-fill [color]="'green'"></aol-style-fill>
+                    </aol-style-circle>
+                </aol-style>
+            </aol-feature>
+            <aol-feature>
+                <aol-geometry-point>
+                    <aol-coordinate [x]="40.33534136546185" [y]="38.61538461538461" [srid]="'EPSG:4326'"></aol-coordinate>
+                </aol-geometry-point>
+                <aol-style>
+                    <aol-style-circle [radius]="10">
+                        <aol-style-stroke [color]="'black'" [width]="width"></aol-style-stroke>
+                        <aol-style-fill [color]="'green'"></aol-style-fill>
+                    </aol-style-circle>
+                </aol-style>
+            </aol-feature>
+            <aol-feature>
+                <aol-geometry-point>
+                    <aol-coordinate [x]="40.33534136546185" [y]="18.991150442477878" [srid]="'EPSG:4326'"></aol-coordinate>
+                </aol-geometry-point>
+                <aol-style>
+                    <aol-style-circle [radius]="10">
+                        <aol-style-stroke [color]="'black'" [width]="width"></aol-style-stroke>
+                        <aol-style-fill [color]="'green'"></aol-style-fill>
+                    </aol-style-circle>
+                </aol-style>
+            </aol-feature>
+        </aol-source-vector>
+    </aol-layer-vector>
+</aol-map>
+
